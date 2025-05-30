@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Doodads</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #8d8d8d; /* Game Boy grey */
+      font-family: sans-serif;
+      overflow: hidden;
+    }
+
+    .crt {
+      position: relative;
+      padding: 40px;
+      background: #8d8d8d;
+      border: 8px solid #555;
+      border-radius: 20px;
+      box-shadow:
+        0 0 30px rgba(0, 0, 0, 0.5),
+        inset 0 0 50px rgba(0, 255, 0, 0.2);
+      filter: contrast(1.2) brightness(1.1);
+    }
+
+    .crt::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.05),
+        rgba(0, 0, 0, 0.05) 1px,
+        transparent 1px,
+        transparent 3px
+      );
+      pointer-events: none;
+      mix-blend-mode: overlay;
+    }
+
+    img.logo {
+      max-width: 80vw;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="crt">
+    <img src="logo.png" alt="Retro Doodads Logo" class="logo">
+  </div>
+</body>
+</html>
