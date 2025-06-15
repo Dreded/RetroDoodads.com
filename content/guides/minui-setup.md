@@ -4,7 +4,7 @@ date: 2025-06-14
 descripion: "Learn how to setup minui for a handheld retro doodad Like the TrimUI Brick."
 tags: ["guides", "sd card", "Custom OS"]
 ---
-## Setting Up MinUI on Your Device (TrimUI, R36S, etc.)
+## Setting Up MinUI on Your Device (TrimUI, etc.)
 
 ### 1. Format Your SD Card
 
