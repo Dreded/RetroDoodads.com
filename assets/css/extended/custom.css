@@ -3,12 +3,13 @@
 body,
 body.light,
 body.dark {
+  font-size: 1rem;
   margin: 0;
   background-color: #1e1e1e !important; /* Dark CRT base */
   color: #dcdcdc !important;
-  font-family: 'VT323', monospace !important;
+  font-family: 'Arial', monospace !important;
   filter: contrast(1.15) brightness(1.1) !important;
-  box-shadow: inset 0 0 40px rgba(0, 255, 0, 0.1) !important;
+  box-shadow: inset 0 0 30px rgba(0, 255, 0, 0.1) !important;
   position: relative;
   overflow-x: hidden;
 }
@@ -39,15 +40,28 @@ main, .main, .content, .container {
   z-index: 2;
 }
 
-/* Neon style text */
 h1, h2, h3 {
-  color: #ff3cac !important;
-  text-shadow: 0 0 4px #ff3cac !important;
+  color: #e68237 !important;
+  text-shadow: 0 0 2px #e68237 !important;
   z-index: 2;
 }
+h1 {
+  font-size: 2rem !important;
+}
+
+h2 {
+  font-size: 1.5rem !important;
+}
+
+h3 {
+  font-size: 1.17rem !important;
+}
+
+
+
 
 a {
-  color: #00d8a2 !important;
-  text-shadow: 0 0 2px #00d8a2 !important;
+  color: #438684 !important;
+  text-shadow: 0 0 1px #438684 !important;
   z-index: 2;
 }
