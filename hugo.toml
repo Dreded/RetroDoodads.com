@@ -1,0 +1,43 @@
+baseURL = "https://retrodoodads.com/"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "Retro Doodads"
+theme = "PaperMod"
+
+[params]
+  author = "Ryan"
+  defaultTheme = "dark"
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  disableScrollToTop = false
+  hideFooter = false
+  customCSS = ["css/custom.css"]
+
+[params.homeInfoParams]
+Title = "Retro Doodads"
+Content = "Your hub for retro game maps, guides, and nostalgic adventures."
+
+[params.assets]
+favicon = "/images/logo.png"
+logo = "/images/logo.png"
+
+[module]
+  hugoVersion = { extended = true, min = "0.100.0" }
+
+[[menu.main]]
+  name = "Guides"
+  url = "/guides/"
+  weight = 1
+
+[[menu.main]]
+  name = "Shop"
+  url = "/shop/"
+  weight = 2
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
