@@ -55,7 +55,7 @@ diskutil list
 > ⚠️ Be extremely careful when selecting disk devices to avoid wiping the wrong drive.
 
 
-> ⚠️ It's highly recommended to use quality microSD cards like **Samsung**. Even some **SanDisk** cards are incompatible with certain Chinese handhelds like the R36S. Avoid using the generic black-label SD card included with your device.
+> ⚠️ It's highly recommended to use quality microSD cards like **Samsung**. Even some **SanDisk** cards are incompatible with certain Chinese handhelds like the R36S. Avoid using the generic black-label SD card included with your device as these tend to fail after a short period of time.
 
 ### 2. Download MinUI
 
