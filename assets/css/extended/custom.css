@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-body {
+body,
+body.light,
+body.dark {
   margin: 0;
-  background-color: #2a2a2a; /* CRT-friendly gray */
-  color: #dcdcdc;
-  font-family: 'VT323', monospace;
-  filter: contrast(1.15) brightness(1.1);
-  box-shadow: inset 0 0 40px rgba(0, 255, 0, 0.1);
+  background-color: #1e1e1e !important; /* Dark CRT base */
+  color: #dcdcdc !important;
+  font-family: 'VT323', monospace !important;
+  filter: contrast(1.15) brightness(1.1) !important;
+  box-shadow: inset 0 0 40px rgba(0, 255, 0, 0.1) !important;
   position: relative;
   overflow-x: hidden;
 }
@@ -30,25 +32,22 @@ body::after {
   z-index: 1;
 }
 
-/* Retro neon glow for headers */
-h1, h2, h3 {
-  color: #ff3cac;
-  text-shadow: 0 0 4px #ff3cac;
-  position: relative;
-  z-index: 2;
-}
-
-/* Hyperlink glow */
-a {
-  color: #00d8a2;
-  text-shadow: 0 0 2px #00d8a2;
-  position: relative;
-  z-index: 2;
-}
-
-/* Ensure content sits above scanlines */
-main, .main, .content, .container, .post, .post-content, .article {
+/* Ensure main content doesn't override background */
+main, .main, .content, .container {
   background: transparent !important;
   position: relative;
+  z-index: 2;
+}
+
+/* Neon style text */
+h1, h2, h3 {
+  color: #ff3cac !important;
+  text-shadow: 0 0 4px #ff3cac !important;
+  z-index: 2;
+}
+
+a {
+  color: #00d8a2 !important;
+  text-shadow: 0 0 2px #00d8a2 !important;
   z-index: 2;
 }
