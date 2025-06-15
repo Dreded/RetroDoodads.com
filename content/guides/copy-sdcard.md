@@ -1,7 +1,7 @@
 ---
 title: "Cloning an SD Card"
-description: "Learn how to clone an SD card to a new one using simple tools on Windows, macOS, and Linux."
 date: 2025-06-14
+descripion: "Learn how to clone an SD card to a new one using simple tools on Windows, macOS, and Linux."
 tags: ["guides", "sd card", "backup"]
 ---
 
