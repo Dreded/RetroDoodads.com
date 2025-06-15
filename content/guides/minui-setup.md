@@ -8,18 +8,52 @@ tags: ["guides", "sd card", "Custom OS"]
 
 ### 1. Format Your SD Card
 
+#### On Windows (Using Rufus)
+
 Use **Rufus** to format your microSD card:
 
 * Download Rufus: [https://rufus.ie/](https://rufus.ie/)
 * Insert your microSD card
 * In Rufus:
-
   * Select the SD card under *Device*
   * Under Boot Selection change it to "Non Bootable"
   * Choose *FAT32* as the file system
   * Uncheck "Create Extended Label and icon Files"
   * (OPTIONAL) Put in a Volume Label of "MinUI"
   * Leave other options at default and click **Start**
+
+#### On Linux (Using `mkfs`)
+
+Open a terminal and run:
+
+```bash
+sudo umount /dev/sdX*
+sudo mkfs.vfat -F 32 -n MinUI /dev/sdX
+```
+
+Replace `/dev/sdX` with the actual device name of your SD card (e.g., `/dev/sdb`). You can identify it using:
+
+```bash
+lsblk
+```
+
+#### On macOS (Using `diskutil`)
+
+Open a terminal and run:
+
+```bash
+diskutil list
+diskutil eraseDisk FAT32 MinUI MBRFormat /dev/diskN
+```
+
+Replace `/dev/diskN` with your SD card’s identifier (e.g., `/dev/disk2`). You can find it using:
+
+```bash
+diskutil list
+```
+
+> ⚠️ Be extremely careful when selecting disk devices to avoid wiping the wrong drive.
+
 
 > ⚠️ It's highly recommended to use quality microSD cards like **Samsung**. Even some **SanDisk** cards are incompatible with certain Chinese handhelds like the R36S. Avoid using the generic black-label SD card included with your device.
 
@@ -88,7 +122,7 @@ Optionally, you can delete unused folders from `Tools` and `Emu` to free up \~10
 
 ```
 Tools/
-├── trimuismart   ✅
+├── trimuismart    ✅
 ├── gkdpixel       ❌
 ├── miyoomini      ❌
 ├── rg35xx         ❌
