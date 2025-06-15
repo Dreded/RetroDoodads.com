@@ -56,3 +56,8 @@ enableRobotsTXT = true
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
+[params.opengraph]
+  enable = true
+
+[params.twitter_cards]
+  enable = true
