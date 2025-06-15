@@ -17,13 +17,13 @@ enableRobotsTXT = true
   customCSS = ["css/custom.css"]
 
   title = "Retro Doodads"
-  description = "Retro Doodads is your go-to source for retro game maps, guides, tutorials, and nostalgic adventures."
+  description = "Retro Doodads is your go-to source for retro game maps printed on canvas, guides, tutorials, and nostalgic adventures."
   keywords = ["retro gaming", "game maps", "emulation", "vintage games", "how-tos", "guides", "RetroDoodads"]
   images = ["images/logo.png"]  # Used in Open Graph and Twitter cards
 
   [params.homeInfoParams]
     Title = "Retro Doodads"
-    Content = "Your hub for retro game maps, guides, and nostalgic adventures."
+    Content = "Your hub for retro canvas game map prints, guides, and nostalgic adventures."
 
   [params.assets]
     favicon = "/images/logo.png"
