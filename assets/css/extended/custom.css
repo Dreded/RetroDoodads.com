@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 body,
 body.light,
@@ -7,7 +6,8 @@ body.dark {
   margin: 0;
   background-color: #1e1e1e !important; /* Dark CRT base */
   color: #dcdcdc !important;
-  font-family: 'Arial', monospace !important;
+  font-family: monospace !important;
+  font-style: normal;
   filter: contrast(1.15) brightness(1.1) !important;
   box-shadow: inset 0 0 30px rgba(0, 255, 0, 0.1) !important;
   position: relative;
