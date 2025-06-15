@@ -3,23 +3,38 @@ languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Retro Doodads"
 theme = "PaperMod"
+enableRobotsTXT = true
 
 [params]
-  author = "Ryan"
+  author = "RyanH"
   defaultTheme = "dark"
+  disableThemeToggle = true
   ShowReadingTime = true
   ShowBreadCrumbs = true
   disableScrollToTop = false
   hideFooter = false
+  env = "production"
   customCSS = ["css/custom.css"]
 
-[params.homeInfoParams]
-Title = "Retro Doodads"
-Content = "Your hub for retro game maps, guides, and nostalgic adventures."
+  title = "Retro Doodads"
+  description = "Retro Doodads is your go-to source for retro game maps, guides, tutorials, and nostalgic adventures."
+  keywords = ["retro gaming", "game maps", "emulation", "vintage games", "how-tos", "guides", "RetroDoodads"]
+  images = ["images/logo.png"]  # Used in Open Graph and Twitter cards
 
-[params.assets]
-favicon = "/images/logo.png"
-logo = "/images/logo.png"
+  [params.homeInfoParams]
+    Title = "Retro Doodads"
+    Content = "Your hub for retro game maps, guides, and nostalgic adventures."
+
+  [params.assets]
+    favicon = "/images/logo.png"
+    logo = "/images/logo.png"
+
+  [params.seo]
+    site_type = "website"
+    site_name = "Retro Doodads"
+    twitter_card = "summary_large_image"
+    og_locale = "en_US"
+
 
 [module]
   hugoVersion = { extended = true, min = "0.100.0" }

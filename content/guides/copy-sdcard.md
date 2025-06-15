@@ -1,8 +1,8 @@
 ---
-title: "How to Copy one SD Card to Another"
-description: "A quick guide for cloning one SD card to another using a computer."
+title: "Copying an SD Card"
+description: "Learn how to copy an SD card to a new one using simple tools on Windows, macOS, and Linux."
 date: 2025-06-14
-weight: 1
+tags: ["guides", "sd card", "backup"]
 ---
 
 Copying an SD card is a great way to back up or duplicate your setup. Here’s how to do it.

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Guides on Retro Doodads</title>
-    <link>http://localhost:1313/guides/</link>
-    <description>Recent content in Guides on Retro Doodads</description>
+    <title>Sd Card on Retro Doodads</title>
+    <link>http://localhost:1313/tags/sd-card/</link>
+    <description>Recent content in Sd Card on Retro Doodads</description>
     <image>
       <title>Retro Doodads</title>
       <url>http://localhost:1313/images/logo.png</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 14 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/guides/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/sd-card/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Copying an SD Card</title>
       <link>http://localhost:1313/guides/copy-sdcard/</link>
